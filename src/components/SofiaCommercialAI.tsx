@@ -25,8 +25,11 @@ import {
   Crown,
   Star,
   Award,
-  Bot
+  Bot,
+  Lock
 } from 'lucide-react'
+import { useUsageTracker, useAnalytics, UsageIndicator } from './SofiaUsageTracker'
+import { SofiaPremiumSystem } from './SofiaPremiumSystem'
 
 interface ChatMessage {
   id: string
@@ -62,7 +65,12 @@ export function SofiaCommercialAI() {
   const [isTyping, setIsTyping] = useState(false)
   const [leadData, setLeadData] = useState<LeadData>({ stage: 'initial' })
   const [currentProposal, setCurrentProposal] = useState<ProposalData | null>(null)
+  const [showPremiumModal, setShowPremiumModal] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+
+  // Usage tracking hooks
+  const { usage, incrementUsage, canMakeQuery, upgradeToPremium } = useUsageTracker()
+  const { trackQueryAttempt, trackUpgradeView, trackUpgradeStart } = useAnalytics()
 
   // Scroll to bottom when new messages arrive
   const scrollToBottom = () => {
@@ -77,18 +85,28 @@ export function SofiaCommercialAI() {
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       setTimeout(() => {
-        addSofiaMessage(
-          "👋 Ciao! Sono Sofia, la tua assistente AI commerciale specializzata in pubblicità immobiliare.\n\n" +
-          "🎯 Posso aiutarti a:\n" +
-          "• Creare campagne pubblicitarie mirate\n" +
-          "• Calcolare preventivi personalizzati\n" +
-          "• Ottimizzare il tuo ROI\n" +
-          "• Gestire l'intero processo di vendita\n\n" +
-          "Come posso aiutarti oggi a dominare il mercato immobiliare? 🚀"
-        )
+        const welcomeMessage = usage.isPremium 
+          ? "👋 Ciao! Sono Sofia, la tua assistente AI commerciale PREMIUM.\n\n" +
+            "🎯 Con il tuo account Premium hai accesso a:\n" +
+            "• Query illimitate\n" +
+            "• Ricerca multi-portale\n" +
+            "• Calcolatore mutui avanzato\n" +
+            "• Analisi di mercato AI\n" +
+            "• Supporto prioritario 24/7\n\n" +
+            "Come posso aiutarti oggi a dominare il mercato immobiliare? 🚀"
+          : `👋 Ciao! Sono Sofia, la tua assistente AI commerciale.\n\n` +
+            `🎯 Hai ${usage.freeQueriesLimit - usage.freeQueriesUsed} query gratuite rimanenti.\n\n` +
+            `Posso aiutarti con:\n` +
+            `• Informazioni sui nostri servizi pubblicitari\n` +
+            `• Preventivi personalizzati\n` +
+            `• Strategie di marketing immobiliare\n\n` +
+            `Dopo ${usage.freeQueriesLimit} query, potrai sbloccare funzionalità premium come ricerca multi-portale, calcolatore mutui e molto altro per soli €4.99/mese!\n\n` +
+            `Come posso aiutarti? 🚀`
+        
+        addSofiaMessage(welcomeMessage)
       }, 500)
     }
-  }, [isOpen])
+  }, [isOpen, usage])
 
   // Add message to chat
   const addMessage = (type: 'user' | 'sofia' | 'system', content: string, data?: any) => {
@@ -112,6 +130,27 @@ export function SofiaCommercialAI() {
 
   // Process user input with AI logic
   const processUserMessage = async (message: string) => {
+    // Check if user can make query
+    const canQuery = incrementUsage()
+    trackQueryAttempt(canQuery)
+    
+    if (!canQuery) {
+      // Show premium modal if limit reached
+      setShowPremiumModal(true)
+      trackUpgradeView()
+      addSofiaMessage(
+        "🔒 Hai esaurito le tue query gratuite!\n\n" +
+        "Per continuare a utilizzare Sofia AI e accedere a funzionalità premium come:\n" +
+        "• Ricerca multi-portale (15+ siti)\n" +
+        "• Calcolatore mutui avanzato\n" +
+        "• Analisi di mercato AI\n" +
+        "• Query illimitate\n\n" +
+        "Passa a Sofia Premium per soli €4.99/mese! 🚀\n\n" +
+        "Clicca il pulsante qui sotto per sbloccare tutto il potenziale di Sofia."
+      )
+      return
+    }
+
     addMessage('user', message)
     
     const lowerMessage = message.toLowerCase()
@@ -127,6 +166,8 @@ export function SofiaCommercialAI() {
       handleContactCollection(message)
     } else if (lowerMessage.includes('roi') || lowerMessage.includes('risultati') || lowerMessage.includes('performance')) {
       handleROIDiscussion(message)
+    } else if (lowerMessage.includes('premium') || lowerMessage.includes('upgrade')) {
+      handlePremiumInquiry(message)
     } else {
       handleGeneralInquiry(message)
     }
@@ -240,6 +281,28 @@ export function SofiaCommercialAI() {
       "• Posizionamento premium\n" +
       "• Audience già interessata\n\n" +
       "Vuoi vedere i risultati che possiamo ottenere per te? 🚀"
+    )
+  }
+
+  const handlePremiumInquiry = (message: string) => {
+    setShowPremiumModal(true)
+    trackUpgradeView()
+    addSofiaMessage(
+      "👑 **SOFIA PREMIUM - L'ESPERIENZA COMPLETA!**\n\n" +
+      "🚀 **COSA OTTIENI CON PREMIUM:**\n" +
+      "• Query illimitate con Sofia AI\n" +
+      "• Ricerca multi-portale (15+ siti immobiliari)\n" +
+      "• Calcolatore mutui con 25+ banche\n" +
+      "• Analisi di mercato AI in tempo reale\n" +
+      "• Consulenza personalizzata 1-on-1\n" +
+      "• Alert prioritari per nuove proprietà\n" +
+      "• Tour virtuali premium\n" +
+      "• Supporto legale e fiscale\n\n" +
+      "💰 **PREZZO IMBATTIBILE:**\n" +
+      "• €4.99/mese (piano mensile)\n" +
+      "• €49.99/anno (risparmi 2 mesi!)\n\n" +
+      "🎯 **NESSUN COMPETITOR OFFRE TUTTO QUESTO!**\n\n" +
+      "Vuoi sbloccare tutto il potenziale di Sofia? Clicca 'Passa a Premium'! ✨"
     )
   }
 
