@@ -3,10 +3,12 @@
  * Homepage ottimizzata con banner rotanti e design professionale
  */
 
-import React from 'react'
+import React, { useState } from 'react'
 import { Search, MapPin, Star, TrendingUp, Phone, Mail } from 'lucide-react'
 import { BannerRotator } from '../components/BannerRotator'
 import { SofiaRSSSection } from '../components/SofiaRSSSection'
+import { SofiaHomepageAvatar } from '../components/SofiaHomepageAvatar'
+import { SofiaCommercialAI } from '../components/SofiaCommercialAI'
 
 // Statistiche mock per la homepage
 const stats = [
@@ -73,6 +75,12 @@ const features = [
 ]
 
 export function HomePage() {
+  const [isSofiaChatOpen, setIsSofiaChatOpen] = useState(false)
+
+  const handleSofiaChatOpen = () => {
+    setIsSofiaChatOpen(true)
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -188,6 +196,25 @@ export function HomePage() {
               )
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Sofia AI Assistant Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              Incontra Sofia, la Tua Assistente AI
+            </h3>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              L'intelligenza artificiale più avanzata per il settore immobiliare. Sofia ti aiuta 24/7 con vendite, marketing e gestione clienti.
+            </p>
+          </div>
+          
+          <SofiaHomepageAvatar 
+            className="max-w-4xl mx-auto"
+            onChatOpen={handleSofiaChatOpen}
+          />
         </div>
       </section>
 
@@ -354,6 +381,9 @@ export function HomePage() {
           </div>
         </div>
       </footer>
+
+      {/* Sofia Commercial AI - Always Available */}
+      <SofiaCommercialAI />
     </div>
   )
 }
