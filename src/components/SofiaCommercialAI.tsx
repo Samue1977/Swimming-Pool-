@@ -168,6 +168,8 @@ export function SofiaCommercialAI() {
       handleROIDiscussion(message)
     } else if (lowerMessage.includes('premium') || lowerMessage.includes('upgrade')) {
       handlePremiumInquiry(message)
+    } else if (lowerMessage.includes("cina") || lowerMessage.includes("china") || lowerMessage.includes("sanya") || lowerMessage.includes("cinese")) {
+      handleChinaSanyaInquiry(message)
     } else {
       handleGeneralInquiry(message)
     }
@@ -499,4 +501,25 @@ export function SofiaCommercialAI() {
     </>
   )
 }
+
+
+
+  const handleChinaSanyaInquiry = (message: string) => {
+    addSofiaMessage(
+      "🇨🇳 **ITALYRE PRO: IL TUO PONTE VERSO SANYA, CINA!** 🇮🇹\n\n" +
+      "Siamo specialisti nel connettere il mercato immobiliare di lusso italiano con le straordinarie opportunità di investimento a Sanya, la perla tropicale dell'isola di Hainan.\n\n" +
+      "**Perché Sanya?**\n" +
+      "• **Crescita Esplosiva**: Un hub turistico e immobiliare in rapida espansione.\n" +
+      "• **Proprietà di Lusso**: Ville esclusive, resort di prestigio e appartamenti con vista mare.\n" +
+      "• **Vantaggi Fiscali**: Zona di libero scambio con politiche favorevoli agli investimenti.\n" +
+      "• **Stile di Vita**: Clima tropicale, spiagge mozzafiato e infrastrutture moderne.\n\n" +
+      "**Come possiamo aiutarti?**\n" +
+      "• **Ricerca Proprietà**: Accesso a un portafoglio selezionato di immobili a Sanya.\n" +
+      "• **Consulenza Legale e Fiscale**: Supporto completo per investimenti internazionali.\n" +
+      "• **Gestione Proprietà**: Servizi post-acquisto per la massima tranquillità.\n" +
+      "• **Visti e Residenza**: Assistenza per il trasferimento e la burocrazia.\n\n" +
+      "Sei interessato a esplorare queste opportunità uniche? Posso metterti in contatto con un nostro esperto dedicato al mercato cinese! 🌏"
+    )
+  }
+
 
