@@ -9,6 +9,7 @@ import { AuthProvider } from './contexts/AuthContext'
 import { UsageProvider } from './components/SofiaUsageTracker'
 import { HomePage } from './pages/HomePage'
 import { SofiaAIPage } from './pages/SofiaAIPage'
+import { SanyaPropertiesPage } from './pages/SanyaPropertiesPage'
 import { LoginPage } from './pages/LoginPage'
 import { AdminDashboard } from './pages/AdminDashboard'
 import { ProtectedRoute } from './components/ProtectedRoute'
@@ -26,6 +27,7 @@ function App() {
                 {/* Public Routes */}
                 <Route path="/" element={<HomePage />} />
                 <Route path="/sofia-ai" element={<SofiaAIPage />} />
+                <Route path="/sanya-properties" element={<SanyaPropertiesPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/admin/login" element={<LoginPage />} />
                 

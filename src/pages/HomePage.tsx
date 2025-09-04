@@ -218,6 +218,21 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* Italy-China Bridge (Sanya) Section */}
+      <section className="py-16 bg-blue-700 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-3xl font-bold mb-4">
+            Il Ponte Immobiliare Italia-Cina: Sanya
+          </h3>
+          <p className="text-lg opacity-90 max-w-3xl mx-auto mb-8">
+            ItalyRE Pro è il tuo partner esclusivo per connettere il mercato immobiliare di lusso italiano con le opportunità emergenti di Sanya, la perla tropicale della Cina. Scopri investimenti unici e proprietà esclusive in un mercato in forte crescita.
+          </p>
+          <a href="/sanya-properties" className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+            Esplora le Proprietà a Sanya
+          </a>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
