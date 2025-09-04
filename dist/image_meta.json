@@ -1,0 +1,262 @@
+[
+  {
+    "query": "A beautiful Tuscan villa with Mediterranean architecture perfect for Chinese investors looking for Italian luxury properties",
+    "image_info": {
+      "url": "https://i.ytimg.com/vi/-pTWAAEnJlM/maxresdefault.jpg",
+      "file_path": "/workspace/imgs/tuscan_mediterranean_luxury_villa_architecture_evening.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 242698,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9430933382043409
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "The image is an exceptional match for the search query and prompt, perfectly showcasing a beautiful, luxurious Mediterranean-style villa with architectural elements reminiscent of Tuscany. The clarity is outstanding, and the composition, lighting, and overall aesthetic are professional and highly appealing, conveying a sense of opulence ideal for luxury real estate. There are no watermarks.",
+      "file_name": "tuscan_mediterranean_luxury_villa_architecture_evening.jpg",
+      "caption": "An exquisite Mediterranean-style villa bathed in the warm glow of evening lights, showcasing luxurious Tuscan-inspired architecture. The property features a charming courtyard, a grand stone staircase with wrought iron railings, balconies, and a mix of stucco and stone facades under a terracotta tiled roof. The illuminated mature tree, potted red flowers, and strategic lighting create an inviting and opulent ambiance, perfect for high-end Italian luxury real estate portfolios.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A beautiful Tuscan villa with Mediterranean architecture perfect for Chinese investors looking for Italian luxury properties",
+    "image_info": {
+      "url": "https://www.gjarquitectura.com/wp-content/uploads/2023/11/Villas-Mediterraneas-en-Real-de-la-Quinta-Gonzalez-Jacobson-Arquitectura-2.jpg",
+      "file_path": "/workspace/imgs/Luxury-Modern-Mediterranean-Villa-Infinity-Pool-Carport.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 149990,
+      "width": 1200,
+      "height": 600,
+      "total_pixels": 720000,
+      "basic_score": 0.8974638453235241
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 65.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly depicts luxury real estate and features contemporary Mediterranean architecture with high clarity and no watermarks. However, its aesthetic leans more towards modern Mediterranean than traditional 'Tuscan villa' and doesn't explicitly convey an 'Italian' location, which impacts the relevance score for the specific query and prompt.",
+      "file_name": "Luxury-Modern-Mediterranean-Villa-Infinity-Pool-Carport.jpg",
+      "caption": "A stunning modern luxury villa showcasing clean white Mediterranean architecture, nestled on a hillside with lush tropical foliage and palm trees under a clear blue sky. The multi-level property features an exquisite infinity swimming pool overlooking a scenic view, expansive outdoor living spaces, large glass windows, and a sheltered carport with a luxury car visible. This high-end real estate embodies sophisticated comfort.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "An Amalfi Coast villa with stunning sea views perfect for Chinese investors seeking Italian coastal properties",
+    "image_info": {
+      "url": "https://media.vrbo.com/lodging/36000000/35150000/35141600/35141594/55254abe.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+      "file_path": "/workspace/imgs/amalfi_coast_luxury_villa_sea_view_italian_property.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 130447,
+      "width": 767,
+      "height": 575,
+      "total_pixels": 441025,
+      "basic_score": 0.8441305016515798
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly depicts an Italian villa with stunning sea views, aligning well with the 'Amalfi Coast villa sea view luxury Italian property' search query and the prompt's description. The architectural style, terraced design, and expansive coastal backdrop strongly suggest an Amalfi Coast location. The image is clear, well-lit, and free of watermarks, showcasing a luxurious property with a private pool. The 'Chinese investors' aspect is a target audience, not visually represented, but the property type is ideal for such an investment.",
+      "file_name": "amalfi_coast_luxury_villa_sea_view_italian_property.jpg",
+      "caption": "A breathtaking panoramic view of a luxurious white-washed villa nestled on the terraced cliffs of the Amalfi Coast, overlooking the sparkling turquoise waters of the Mediterranean Sea. The property features traditional Italian architecture, a private swimming pool, multiple balconies, and lush green foliage, with distant mountains and boats traversing the clear blue ocean under a bright, sunny sky.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "An Amalfi Coast villa with stunning sea views perfect for Chinese investors seeking Italian coastal properties",
+    "image_info": {
+      "url": "https://media.vrbo.com/lodging/40000000/39980000/39979100/39979003/40f14762.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+      "file_path": "/workspace/imgs/amalfi-coast-villa-luxury-sea-view-italian-property-outdoor-dining.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 186168,
+      "width": 862,
+      "height": 575,
+      "total_pixels": 495650,
+      "basic_score": 0.8654420796480846
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the search query and prompt, showcasing a luxurious outdoor dining area with a breathtaking panoramic sea view characteristic of the Amalfi Coast. The clarity is excellent, and there are no watermarks. The composition and lighting contribute to a high overall professional quality, making it ideal for promoting Italian coastal properties.",
+      "file_name": "amalfi-coast-villa-luxury-sea-view-italian-property-outdoor-dining.jpg",
+      "caption": "A stunning panoramic view from a luxurious outdoor dining terrace of an Italian villa on the Amalfi Coast. The scene features a beautifully set table with breakfast items under a rustic thatched pergola, overlooking the vibrant blue Tyrrhenian Sea with distant boats and the iconic coastal landscape. This exquisite property offers unparalleled sea views, ideal for a luxury coastal living experience.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "An Amalfi Coast villa with stunning sea views perfect for Chinese investors seeking Italian coastal properties",
+    "image_info": {
+      "url": "https://www.sopranovillas.com/wp-content/uploads/2023/05/06052023-DJI_0093-1.jpeg",
+      "file_path": "/workspace/imgs/amalfi-coast-luxury-villa-sea-view-italy-property.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 560645,
+      "width": 1800,
+      "height": 1200,
+      "total_pixels": 2160000,
+      "basic_score": 0.7221177046609764
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly depicts a luxury Italian property on the Amalfi Coast with stunning sea views, directly aligning with the search query and prompt. The clarity is excellent, composition is professional, and there are no watermarks. It's an ideal visual representation for the intended audience.",
+      "file_name": "amalfi-coast-luxury-villa-sea-view-italy-property.jpg",
+      "caption": "An exquisite aerial view captures luxurious villas and properties nestled into the dramatic, terraced cliffs of the iconic Amalfi Coast in Italy. The vibrant turquoise waters of the Mediterranean Sea stretch out before the coastal homes, showcasing breathtaking sea views. Lush green olive groves and vegetation adorn the steep hillsides, highlighting the unique charm and opulence of this world-renowned Italian coastal region, perfect for discerning investors.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "An Amalfi Coast villa with stunning sea views perfect for Chinese investors seeking Italian coastal properties",
+    "image_info": {
+      "url": "https://img.holidu.com/images/a8f07309-3719-4d04-8cbf-0e37512f1094/l.jpg",
+      "file_path": "/workspace/imgs/luxury_amalfi_coast_villa_sea_view_italian_property.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 403576,
+      "width": 1280,
+      "height": 959,
+      "total_pixels": 1227520,
+      "basic_score": 0.9468935796109341
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is exceptionally relevant, perfectly capturing a luxurious villa on a cliffside with stunning sea views, highly characteristic of an Italian coastal property like those found on the Amalfi Coast. The clarity is excellent, showcasing fine details of the architecture and natural environment. There are no watermarks. The overall composition and professional quality are outstanding, making it highly suitable for promoting high-end real estate.",
+      "file_name": "luxury_amalfi_coast_villa_sea_view_italian_property.jpg",
+      "caption": "An aerial view showcases a magnificent multi-story white villa perched dramatically on a lush green cliffside overlooking the crystal-clear turquoise waters of the Mediterranean Sea, reminiscent of the stunning Amalfi Coast in Italy. The luxury property features multiple balconies and terraces, offering panoramic sea views, and is surrounded by dense, vibrant vegetation. Nearby, a traditional stone structure with arched windows adds to the charm of this exquisite coastal setting, ideal for discerning investors seeking premium Italian real estate.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A modern Rome penthouse with terrace and city view for high-end real estate targeting Chinese market",
+    "image_info": {
+      "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTEwNDcwMA==/original/7b4de910-85d9-4dc7-b2bb-00e27bc7fd9a.jpeg",
+      "file_path": "/workspace/imgs/rome-penthouse-terrace-city-view-castel-santangelo-luxury.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 166498,
+      "width": 1200,
+      "height": 801,
+      "total_pixels": 961200,
+      "basic_score": 0.9394915674005682
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant to the search query and prompt, perfectly showcasing a Rome penthouse with a stunning city view and terrace. It features iconic Roman landmarks like Castel Sant'Angelo, conveying a sense of luxury and high-end living. The clarity is excellent, and there are no watermarks. While the terrace design isn't overtly 'modern' in a minimalist sense, it represents a high-quality, desirable space.",
+      "file_name": "rome-penthouse-terrace-city-view-castel-santangelo-luxury.jpg",
+      "caption": "A breathtaking panoramic view of Rome from a luxurious penthouse terrace on a sunny day. The vista features the iconic Castel Sant'Angelo and Ponte Sant'Angelo spanning the Tiber River, surrounded by the historic cityscape of Rome with its distinctive architecture and lush green trees. In the foreground, comfortable outdoor seating with blue cushions, potted plants including a sago palm and an agave in an ornate urn, and a bamboo sunshade frame the stunning urban landscape, offering an exclusive perspective of the Eternal City.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A modern Rome penthouse with terrace and city view for high-end real estate targeting Chinese market",
+    "image_info": {
+      "url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/67002568.jpg?k=8c8ba58bda496ee1a242bfe685c6ea2cfd8eda51cd1eeb9c0a968f51ff38726a&o=&hp=1",
+      "file_path": "/workspace/imgs/rome_penthouse_terrace_city_view_luxury_outdoor_living.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 151416,
+      "width": 1024,
+      "height": 768,
+      "total_pixels": 786432,
+      "basic_score": 0.9222013605472643
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 88.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image clearly depicts a spacious rooftop terrace with a compelling city view, aligning well with the 'penthouse', 'city view', and 'terrace' aspects of the query. The furniture suggests a comfortable, potentially luxury setting, and the architecture is consistent with a European city like Rome. It is very clear, well-lit, and professionally composed, making it suitable for high-end real estate. While 'modern' is debatable for the surrounding buildings, the terrace itself has modern elements. No watermarks are present.",
+      "file_name": "rome_penthouse_terrace_city_view_luxury_outdoor_living.jpg",
+      "caption": "A stunning rooftop terrace of a luxury penthouse apartment in a European city, likely Rome, offering panoramic views of historical buildings under a clear sky. The spacious outdoor living area features comfortable dark wicker lounge furniture, a large glass-top dining table with matching chairs, and decorative potted plants, including a bonsai. This inviting space is ideal for high-end real estate listings targeting those seeking an exclusive urban oasis.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A modern Rome penthouse with terrace and city view for high-end real estate targeting Chinese market",
+    "image_info": {
+      "url": "https://a0.muscache.com/im/pictures/miso/Hosting-832387651988995896/original/a6b311f8-ca07-4f58-9902-4bae351e8a59.jpeg?im_w=720&width=720&quality=70&auto=webp",
+      "file_path": "/workspace/imgs/rome_penthouse_terrace_city_view_st_peters_dome.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 88149,
+      "width": 720,
+      "height": 1082,
+      "total_pixels": 779040,
+      "basic_score": 0.8952576061472519
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 75.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 85.0,
+      "explanation": "The image is highly relevant to 'Rome terrace city view from a penthouse apartment', featuring the iconic St. Peter's Basilica. It boasts excellent clarity, natural lighting, and a professional composition with no watermarks. However, the basic white plastic patio furniture does not fully convey the 'luxury' or 'modern' aesthetic specified for high-end real estate targeting a Chinese market, which slightly lowers the relevance and overall scores.",
+      "file_name": "rome_penthouse_terrace_city_view_st_peters_dome.jpg",
+      "caption": "A bright and inviting rooftop terrace offers panoramic views of the historic city of Rome, Italy. The terrace is furnished with a white slatted patio table and matching chairs, adorned with a potted cactus centerpiece and a black kettle barbecue grill. In the background, the iconic dome of St. Peter's Basilica majestically rises above the charming terracotta rooftops of residential buildings under a vibrant blue sky dotted with fluffy white clouds, capturing the essence of an ideal Roman outdoor living space.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A modern Rome penthouse with terrace and city view for high-end real estate targeting Chinese market",
+    "image_info": {
+      "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-14095402/original/b5615880-a90b-4536-a98e-5cbc2f7de718.jpeg?im_w=720",
+      "file_path": "/workspace/imgs/Rome_Historic_Rooftop_Terrace_City_View_Apartment.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 89428,
+      "width": 720,
+      "height": 720,
+      "total_pixels": 518400,
+      "basic_score": 0.8601646363046915
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 70.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 80.0,
+      "explanation": "The image is highly relevant for depicting a Rome city view from a terrace, suggestive of a penthouse apartment. Its clarity and overall professional quality are excellent, with no watermarks. However, the aesthetic of the terrace (traditional wooden trellis, basic potted plants, and tiling) appears more charming/rustic than explicitly 'modern' or 'luxury high-end' as specified in the prompt for real estate targeting a specific market.",
+      "file_name": "Rome_Historic_Rooftop_Terrace_City_View_Apartment.jpg",
+      "caption": "A panoramic photograph from a sun-drenched rooftop terrace in Rome, Italy, offering a sprawling view of the historic cityscape under a clear blue sky. The terrace features terracotta-colored tiles, a rustic wooden trellis, and lush potted plants, providing an elevated perspective of traditional Roman architecture, including a prominent dome and various rooftops.",
+      "recommend": true,
+      "error": ""
+    }
+  }
+]
